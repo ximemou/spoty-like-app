@@ -14,10 +14,10 @@ export class SpotifyService {
 
 getQuery( query: string) {
 
-  //completar el bearer para que funcione
+  // completar el Bearer para que funcione
   const url = `https://api.spotify.com/v1/${query}`;
   const headers = new HttpHeaders({
-    Authorization: 'Bearer ', //completar el bearer para que funcione
+    Authorization: 'Bearer',  // completar el Bearer para que funcione
   });
   return this.http.get(url, {headers});
 
